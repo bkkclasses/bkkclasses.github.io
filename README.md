@@ -1,1 +1,1 @@
-This is our official website.
+This is our official channel.
