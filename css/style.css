@@ -424,4 +424,7 @@ a {
         gap: 10px;
     }
 }
+.blog-cta {
 
+    text-align: center;   /* ✅ THIS CENTERS h1, h3, p */
+}
