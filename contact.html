@@ -1,45 +1,157 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Contact | BKK Classes</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | BKK Classes</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
+
+<!-- ================= NAVBAR ================= -->
 <header class="navbar">
-<div class="logo">BKK Classes</div>
-<nav>
-<a href="index.html">Home</a>
-<a href="courses.html">Courses</a>
-<a href="faculty.html">Faculty</a>
-<a href="contact.html">Contact</a>
-</nav>
+    <div class="container nav-container">
+
+        <div class="logo">
+            <a href="index.html">BKK Classes</a>
+        </div>
+
+        <div class="menu-toggle" id="menuToggle">☰</div>
+
+        <nav class="menu" id="menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+
+                <li class="dropdown">
+                    <a href="#">Courses ▾</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">UPSC Foundation</a></li>
+                        <li><a href="#">Prelims Program</a></li>
+                        <li><a href="#">Mains Answer Writing</a></li>
+                        <li><a href="#">Interview Guidance</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="#">Faculty</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+
+                <li><a href="#" class="nav-btn">Enroll Now</a></li>
+            </ul>
+        </nav>
+    </div>
 </header>
 
-
-<section class="page">
-<h2>Contact BKK Classes</h2>
-<p>Reach out to us for admissions, counseling, or academic guidance.</p>
-
-
-<form onsubmit="return sendMessage()">
-<input type="text" placeholder="Full Name" required>
-<input type="email" placeholder="Email Address" required>
-<input type="text" placeholder="Phone Number">
-<textarea placeholder="Your Message"></textarea>
-<button type="submit">Send Message</button>
-</form>
-
-
-<div class="social">
-<p>Connect with us on</p>
-<a href="https://www.linkedin.com" target="_blank">LinkedIn – BKK Classes</a>
-</div>
+<!-- ================= PAGE HEADER ================= -->
+<section class="page-header">
+    <h1>Contact Us</h1>
+    <p>We are here to guide you on your UPSC journey</p>
 </section>
 
+<!-- ================= CONTACT SECTION ================= -->
+<section class="contact">
+    <div class="container contact-grid">
 
-<footer class="footer">© 2026 BKK Classes</footer>
+        <!-- Contact Info -->
+        <div class="contact-info">
+            <h2>Get in Touch</h2>
+            <p>
+                Feel free to contact us for admissions, course details,
+                or counseling support.
+            </p>
+
+            <div class="info-box">
+                <strong>📍 Address</strong>
+                <p>Karol Bagh, New Delhi – 110005</p>
+            </div>
+
+            <div class="info-box">
+                <strong>📞 Phone</strong>
+                <p>+91 98765 43210</p>
+            </div>
+
+            <div class="info-box">
+                <strong>✉ Email</strong>
+                <p>info@bkkclasses.com</p>
+            </div>
+
+            <div class="info-box">
+                <strong>🕘 Office Hours</strong>
+                <p>Mon – Sat : 9:00 AM – 7:00 PM</p>
+            </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="contact-form">
+            <h2>Send Us a Message</h2>
+
+            <form>
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <input type="text" placeholder="Phone Number" required>
+
+                <select required>
+                    <option value="">Select Course</option>
+                    <option>UPSC Foundation</option>
+                    <option>Prelims Program</option>
+                    <option>Mains Answer Writing</option>
+                    <option>Interview Guidance</option>
+                </select>
+
+                <textarea rows="5" placeholder="Your Message"></textarea>
+
+                <button type="submit" class="btn-primary">
+                    Submit Enquiry
+                </button>
+            </form>
+        </div>
+
+    </div>
+</section>
+
+<!-- ================= MAP ================= -->
+<section class="map">
+    <iframe 
+        src="https://www.google.com/maps?q=Karol%20Bagh%20Delhi&output=embed"
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
+    <div class="container footer-content">
+
+        <div>
+            <h3>BKK Classes</h3>
+            <p>India’s trusted UPSC coaching institute.</p>
+        </div>
+
+        <div>
+            <h4>Quick Links</h4>
+            <a href="index.html">Home</a>
+            <a href="#">Courses</a>
+            <a href="#">Faculty</a>
+            <a href="contact.html">Contact</a>
+        </div>
+
+        <div>
+            <h4>Contact</h4>
+            <p>Email: info@bkkclasses.com</p>
+            <p>Phone: +91 98765 43210</p>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        © 2026 BKK Classes. All Rights Reserved.
+    </div>
+</footer>
+
 <script src="js/main.js"></script>
 </body>
 </html>
