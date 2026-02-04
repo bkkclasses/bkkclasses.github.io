@@ -1,0 +1,29 @@
+body{margin:0;font-family:'Poppins',Arial,sans-serif;background:#f5f7fb;color:#222}
+.navbar{background:#0a2a66;color:#fff;padding:15px 25px;display:flex;justify-content:space-between;align-items:center}
+.logo{font-size:22px;font-weight:700}
+.navbar a{color:#fff;margin-left:18px;text-decoration:none;font-weight:500}
+.hero{text-align:center;padding:100px 20px;background:#0a2a66;color:#fff}
+.hero h1{font-size:42px;margin-bottom:15px}
+.hero p{max-width:700px;margin:auto;font-size:18px}
+.btn{display:inline-block;margin-top:25px;background:#ff9800;color:#fff;padding:14px 36px;border-radius:30px;text-decoration:none}
+.about{padding:60px;text-align:center}
+.highlights{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:15px;margin-top:30px}
+.page{padding:60px;max-width:1200px;margin:auto}
+.card-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:25px;margin-top:30px}
+.card{background:#fff;padding:30px;border-radius:14px;box-shadow:0 10px 25px rgba(0,0,0,0.08)}
+.card ul{padding-left:18px}
+form{max-width:450px;margin:30px auto;background:#fff;padding:30px;border-radius:14px}
+input,textarea,button{width:100%;margin-bottom:14px;padding:12px;font-size:15px}
+button{background:#ff9800;border:none;color:#fff;font-weight:600;cursor:pointer}
+.footer{text-align:center;background:#0a2a66;color:#fff;padding:20px;margin-top:60px}
+.footer a{color:#ff9800;text-decoration:none}
+.social{text-align:center;margin-top:25px}
+
+
+====================================================
+js/main.js (JAVASCRIPT)
+====================================================
+function sendMessage(){
+alert('Thank you for contacting BKK Classes. Our team will reach out shortly.');
+return false;
+}
