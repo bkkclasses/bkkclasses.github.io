@@ -1,19 +1,52 @@
+<!DOCTYPE html>
 <html lang="en">
-<meta charset="UTF-8">
-<title>Courses | BKK Classes</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="css/style.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BKK Classes | UPSC Coaching</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
+
+<!-- ================= NAVBAR ================= -->
 <header class="navbar">
-<div class="logo">BKK Classes</div>
-<nav>
-<a href="index.html">Home</a>
-<a href="courses.html">Courses</a>
-<a href="faculty.html">Faculty</a>
-<a href="contact.html">Contact</a>
-</nav>
+    <div class="container nav-container">
+
+        <div class="logo">
+            <a href="index.html">BKK Classes</a>
+        </div>
+
+        <!-- Mobile Toggle -->
+        <div class="menu-toggle" id="menuToggle">☰</div>
+
+        <nav class="menu" id="menu">
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+
+                <li class="dropdown">
+                    <a href="courses.html">Courses ▾</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">UPSC Foundation</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="faculty.html">Faculty</a></li>
+                <li><a href="contact.us">Contact</a></li>
+
+                <li>
+                    <a href="+91-7389328893" class="nav-btn">Enroll Now</a>
+                </li>
+            </ul>
+        </nav>
+
+    </div>
 </header>
+
 
 
 <section class="page">
